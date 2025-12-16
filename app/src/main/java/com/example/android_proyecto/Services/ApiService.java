@@ -3,6 +3,7 @@ package com.example.android_proyecto.Services;
 import com.example.android_proyecto.Models.Faq;
 import com.example.android_proyecto.Models.FishingRod;
 import com.example.android_proyecto.Models.QuestionRequest;
+import com.example.android_proyecto.Models.Team;
 import com.example.android_proyecto.Models.Token;
 import com.example.android_proyecto.Models.User;
 import com.example.android_proyecto.Models.UserLogIn;
@@ -85,4 +86,8 @@ public interface ApiService {
 
     @GET("info/videos")
     Call<List<Video>> getVideos();
+
+    @GET("user/{username}/team")
+    Call<Team> getTeam(@Path("username") String username);
+
 }

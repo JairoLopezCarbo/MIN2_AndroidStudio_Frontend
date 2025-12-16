@@ -9,7 +9,7 @@
 
     <!-- NAME ON TOP -->
     <TextView
-        android:id="@+id/tvRodName"
+        android:id="@+id/tvUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/pixel_font"

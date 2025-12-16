@@ -30,6 +30,8 @@ public class MenuActivity extends AppCompatActivity {
     private FrameLayout settingsPanel;
     private Button btnBackFromSettings;
 
+    private Button btnTeam;
+
     private TextView tvWelcomeUser;
     private SessionManager session;
 
@@ -45,6 +47,8 @@ public class MenuActivity extends AppCompatActivity {
 
         btnGoGame = findViewById(R.id.btnGoGame);
         btnGoShop = findViewById(R.id.btnGoShop);
+        btnTeam = findViewById(R.id.btnTeam);
+
         btnLogout = findViewById(R.id.btnLogout);
 
         btnSettings = findViewById(R.id.btnSettings);
@@ -67,6 +71,12 @@ public class MenuActivity extends AppCompatActivity {
             Intent intent = new Intent(MenuActivity.this, ShopActivity.class);
             startActivity(intent);
         });
+
+        btnTeam.setOnClickListener(v -> {
+            Intent intent = new Intent(MenuActivity.this, TeamActivity.class);
+            startActivity(intent);
+        });
+
 
         btnLogout.setOnClickListener(v -> doLogout());
 

@@ -114,7 +114,7 @@ public class RodsAdapter extends RecyclerView.Adapter<RodsAdapter.RodViewHolder>
 
         RodViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvName = itemView.findViewById(R.id.tvRodName);
+            tvName = itemView.findViewById(R.id.tvUsername);
             tvDesc = itemView.findViewById(R.id.tvRodDesc);
             tvPrice = itemView.findViewById(R.id.tvRodPrice);
             btnBuy = itemView.findViewById(R.id.btnBuy);
